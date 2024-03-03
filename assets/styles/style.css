@@ -127,10 +127,40 @@ button {
 }
 .SignUp {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* By default, flex-direction is a row*/
   flex-wrap: nowrap;
-  margin-left: 18em;
+  margin-left: 18em; /* Becareful while using this value. Could hinder responsiveness on mobile*/
   padding-top: 5em;
+}
+
+.sign-up {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sign-up > a {
+  color: white;
+  border: 0px transparent white;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+/* Select the first a element and style it */
+.sign-up > a:nth-child(1) {
+  background-color: rgb(2, 228, 131);
+}
+
+.sign-up > a:nth-child(2) {
+  background-color: rgb(26, 76, 240);
+}
+
+.sign-up > a:nth-child(1):hover {
+  background-color: rgba(243, 211, 30, 0.904);
+}
+
+.sign-up > a:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, 0.938);
 }
 
 #sign12 {
